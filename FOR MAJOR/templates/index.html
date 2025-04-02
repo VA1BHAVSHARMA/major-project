@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Meeting Summarizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="app">
+        <h2 class="heading">Meeting Summarizer</h2>
+        <div>
+            <button class="loginButton" onclick="window.location.href='/login'">Login with Google</button>
+        </div>
+
+        <form class="meetLink" action="/join_meeting" method="post">
+            <label >Select Meeting Platform:</label>
+            <div class="spacing">
+                <select class="spacing" name="platform">
+                    <option value="google_meet">Google Meet</option>
+                    <option value="zoom">Zoom</option>
+                </select>
+            </div>
+            <div class="spacing">
+                <input class="mLink" type="text" name="meeting_link" placeholder="Enter Meeting Link" required>
+            </div>
+            <button class="joinButton" type="submit">Join & Record</button>
+        </form>
+
+        <h3>Summary:</h3>
+        <label>
+            <input className="textArea"/>
+        </label>
+        <div class="textArea" id="summary">{{ summary }}</div>
+        <button class="mailButton" onclick="window.location.href='/send_email'">Send to Email</button>
+
+        <h3><a href="/history">View Summary History</a></h3>
+    </div>
+</body>
+</html>

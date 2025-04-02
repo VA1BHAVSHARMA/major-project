@@ -1,0 +1,123 @@
+.app{
+    background-color: bisque;
+    width: 100vw;
+    height: 100vh;
+    padding: 1% 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .heading{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    size: 70px;
+  }
+  
+  .meetLink{
+    height: 25vh;
+    width: 25vw;
+    /* padding: 1%; */
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-left: 1%;
+  }
+  
+  .summary{
+    height: 30vh;
+    /* padding: 1%; */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+    
+  }
+  
+  .mail-area{
+    height: 25vh;
+    /* padding: 1%; */
+    display: flex;
+    flex-direction: column;
+  
+  }
+
+  .spacing{
+    padding: 2%;
+  }
+  
+  h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  button{
+    width: 10vw;
+    height: 5vh;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+  }
+
+  .loginButton{
+    position: absolute;
+    left: 80%;
+    top: 10%;
+    height: 7%;
+    width: 8%;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(0, 0, 0);
+    color: white;
+  }
+  
+  .sumButton{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    height: 10%;
+    width: 15%;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(20, 97, 46);
+    color: white;
+  
+  }
+  
+  .joinButton{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(109, 18, 18);
+    color: white;
+  }
+  
+  .mailButton{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(30, 30, 160);
+    color: white;
+  }
+  
+  .buttonClass{
+    padding: 0% 3%;
+  }
+  
+  .mLink{
+    height: 5vh;
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 0% 2%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .textArea{
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 1%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: '1000px'; 
+    height: '500px';
+  }
+  
+  label{
+    padding: 1% 0% 1.5% 0%;
+  }
+  
+  
